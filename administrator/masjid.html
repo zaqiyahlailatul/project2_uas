@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Direktory Masjid Depok | Data Masjid</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.css" />
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css" />
+    <!-- summernote -->
+    <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css" />
+
+    <link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="dashboard.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="navbar-search-block">
+                        <form class="form-inline">
+                            <div class="input-group input-group-sm" style="width: 150px">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                                    aria-label="Search" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="dashboard.html" class="brand-link">
+                <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                    style="opacity: 0.8" />
+                <span class="brand-text font-weight-light">Direktory Masjid Depok</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="../dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image" />
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">ahmad admin</a>
+                    </div>
+                </div>
+
+                <!-- SidebarSearch Form -->
+                <div class="form-inline">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                            aria-label="Search" />
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+                                <i class="fas fa-search fa-fw"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item menu-open">
+                            <a href="dashboard.html" class="nav-link ">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="masjid.html" class="nav-link active">
+                                <i class="nav-icon fas fa-cart-arrow-down"></i>
+                                <p>
+                                    Masjid
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="berita.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Berita
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="nav-icon far fa-arrow-alt-circle-right"></i>
+                                <p>Logout</p>
+                            </a>
+                        </li>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Data Masjid</li>
+                            </ol>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <!-- Small boxes (Stat box) -->
+                    <div class="row">
+                        <div class="col-lg-12 card">
+                            <div class="card-header mb-3">
+                                <h3 class="card-title">Data Direktory Masjid Depok</h3>
+                            </div>
+                            <button type="button" class="btn btn-primary mb-3" data-toggle="modal"
+                                data-target="#tambah">
+                                Tambah Masjid
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="tambah"
+                                aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="tambah">Tambah Masjid</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="masjid">Nama masjid</label>
+                                                    <input type="text" class="form-control" id="masjid"
+                                                        placeholder="Nama masjid" />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="tahun">Tahun Didirikan</label>
+                                                    <input type="number" class="form-control" id="tahun"
+                                                        placeholder="Tahun Di dirikan" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="kecamatan">Kecamatan</label>
+                                                    <select class="form-control" name="" id="kecamatan">
+                                                        <option value="beji">Beji</option>
+                                                        <option value="bojongsari">Bojongsari</option>
+                                                        <option value="cinere">Cinere</option>
+                                                        <option value="cipayung">Cipayung</option>
+                                                        <option value="limo">Limo</option>
+                                                        <option value="sawangan">Sawangan</option>
+                                                        <option value="sukmajaya">Sukmajaya</option>
+                                                        <option value="tapos">Tapos</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="kelurahan">Kelurahan</label>
+                                                    <select class="form-control" name="" id="kelurahan">
+                                                        <option value="">Pilih kelurahan</option>
+                                                        <option value="bejijaya">Beji Jaya</option>
+                                                        <option value="bejikusuma">Beji Kusuma</option>
+                                                        <option value="bejimulya">Beji Mulya</option>
+                                                        <option value="bejirahayu">Beji Rahayu</option>
+                                                        <option value="bojongsari">Bojongsari</option>
+                                                        <option value="bojongsarijaya">Bojongsari Jaya</option>
+                                                        <option value="bojongsarimulya">Bojongsari Mulya</option>
+                                                        <option value="cinere">Cinere</option>
+                                                        <option value="cinerejaya">Cinere Jaya</option>
+                                                        <option value="cineremulya">Cinere Mulya</option>
+                                                        <option value="cinerepermai">Cinere Permai</option>
+                                                        <option value="cineresari">Cinere Sari</option>
+                                                        <option value="cipayung">Cipayung</option>
+                                                        <option value="cipayungkaler">Cipayung Kaler</option>
+                                                        <option value="cipayungkidul">Cipayung Kidul</option>
+                                                        <option value="cipayungkulon">Cipayung Kulon</option>
+                                                        <option value="limo">Limo</option>
+                                                        <option value="limokaler">Limo Kaler</option>
+                                                        <option value="limokidul">Limo Kidul</option>
+                                                        <option value="limokulon">Limo Kulon</option>
+                                                        <option value="sawangan">Sawangan</option>
+                                                        <option value="sawanganjaya">Sawangan Jaya</option>
+                                                        <option value="sawanganmulya">Sawangan Mulya</option>
+                                                        <option value="sawanganpermai">Sawangan Permai</option>
+                                                        <option value="sukmajaya">Sukmajaya</option>
+                                                        <option value="sukmajayajaya">Sukmajaya Jaya</option>
+                                                        <option value="sukmajayamulya">Sukmajaya Mulya</option>
+                                                        <option value="tapos">Tapos</option>
+                                                        <option value="taposjaya">Tapos Jaya</option>
+                                                        <option value="taposmulya">Tapos Mulya</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="fasilitas">Deskripsi Fasilitas</label>
+                                                    <textarea id="fasilitas" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pengurus">Pengurus DKM</label>
+                                                    <input type="text" class="form-control" id="pengurus"
+                                                        placeholder="Pengurus DKM" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="telepon">No Hp/Telpon</label>
+                                                    <input type="number" class="form-control" id="telepon"
+                                                        placeholder="No Hp/Telpon" />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="email">Email</label>
+                                                    <input type="email" class="form-control" id="email"
+                                                        placeholder="example@xample.com" />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="website">Alamat Website</label>
+                                                    <input type="text" class="form-control" id="website"
+                                                        value="https://" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="alamat">Alamat Lengkap</label>
+                                                    <textarea id="alamat" class="form-control"></textarea>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="latitude">Latitude, Longitude</label>
+                                                    <input type="text" class="form-control" id="latitude"
+                                                        placeholder="latitude" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="jenis">Jenis</label>
+                                                    <select class="form-control" name="" id="jenis">
+                                                        <option value="masjid-jami">MASJID JAMI</option>
+                                                        <option value="masjid-publik">MASJID DI TEMPAT PUBLIK</option>
+                                                        <option value="masjid-negara">MASJID NEGARA </option>
+                                                        <option value="mushalla">Mushalla </option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="tanah">Status Tanah</label>
+                                                    <select class="form-control" name="" id="tanah">
+                                                        <option value="Wakaf">Wakaf</option>
+                                                        <option value="SHM">SHM</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-success">Upadte</button>
+                                            <button type="button" class="btn btn-primary">Simpan</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama Masjid</th>
+                                        <th>Tahun Berdiri</th>
+                                        <th>Alamat</th>
+                                        <th>Kecamatan</th>
+                                        <th>Jenis</th>
+                                        <th>Status Tanah</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Masjid AL FALAH</td>
+                                        <td>1990</td>
+                                        <td>Gg. MASJID, KEL. JATI JAJAR RT 02/05</td>
+                                        <td>Cipayung</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>Wakaf</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Masjid Al-Ikhlas</td>
+                                        <td>2004</td>
+                                        <td>Jl. Ikhlas X, Komplek Perumahan Dep.Agama, Bumi Sawangan
+                                            Indah, Pengasinan, Sawangan - Kota
+                                            Depok</td>
+                                        <td>Sawangan</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>SHM</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Masjid Al-Ikhlas</td>
+                                        <td>2000</td>
+                                        <td>Hotel Bumi Wiyata, Jl. Margonda Raya, Kota Depok, Jawa Barat
+                                        </td>
+                                        <td>Beji</td>
+                                        <td>MASJID DI TEMPAT PUBLIK</td>
+                                        <td>SHM</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Masjid AL-ISTIQOMAH</td>
+                                        <td>1918</td>
+                                        <td>JL. RAYA SAWANGAN RT 002/002 KEL. MAMPANG</td>
+                                        <td>Pancoran Mas</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>Wakaf</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Masjid Al-Jihad</td>
+                                        <td>1970</td>
+                                        <td>cilodong RT.02/02 Kel.Kalibaru,Kec. Cilodong,Kota Depok</td>
+                                        <td>Cilodong</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>Wakaf</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Masjid Al-Muhajirin</td>
+                                        <td>1984</td>
+                                        <td>Jl. Nusantara Raya no.33, Kota Depok</td>
+                                        <td>Pancoran Mas</td>
+                                        <td>MASJID NEGARA</td>
+                                        <td>SHM</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Masjid Al-Muhajirin</td>
+                                        <td>1990</td>
+                                        <td>Perumahan Bumi Mentari Blok D1/9 Rt.02/013 Kel.Pondok Petir,
+                                            Kec.Sawangan</td>
+                                        <td>Bojongsari</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>Wakaf</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Masjid AL-MUJAHIDIN SMPN 10 DEPOK</td>
+                                        <td>1994</td>
+                                        <td>Jl. RAYA BEDAHAN RT 01/09 KEL. BEDAHAN</td>
+                                        <td>Sawangan</td>
+                                        <td>MASJID DI TEMPAT PUBLIK</td>
+                                        <td>SHM</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Masjid Al-Muqorrobin</td>
+                                        <td>1990</td>
+                                        <td>Jl. Balinjo, Kec.Beji, Depok Utara</td>
+                                        <td>Beji</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>Wakaf</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Masjid An-Nuur</td>
+                                        <td>1990</td>
+                                        <td>Jl.Nuri Raya Rw.08 Depok Jaya</td>
+                                        <td>Pancoran Mas</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>Wakaf</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Masjid At-Taqwa</td>
+                                        <td>1978</td>
+                                        <td>Jl. Wijaya Kusuma Raya Rw.06 Depok Jaya</td>
+                                        <td>Pancoran Mas</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>Wakaf</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Masjid BAITUL FAQIH</td>
+                                        <td>2012</td>
+                                        <td>JL. RAYA KALIMULYA, KEBON DUREN, KALIMULYA, DEPOK</td>
+                                        <td>Cilodong</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>SHM</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Masji rrahman</td>
+                                        <td>1990</td>
+                                        <td>Jalan. H. Sulaiman RT 02/02 Kel. Bedahan Kec. Sawangan</td>
+                                        <td>Sawangan</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>Wakaf</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Masji SSYAKUR</td>
+                                        <td>1991</td>
+                                        <td>JL. H. DIMUN RAYA NO. 69 KEL. SUKAMAJU</td>
+                                        <td>Cilodong</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>SHM</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Masjid Dian Al-Mahri</td>
+                                        <td>2006</td>
+                                        <td>Jl Raya Meruyung-Cinere, Depok, Jawa Barat</td>
+                                        <td>Cinere</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>SHM</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Masjid NURUL HUDA</td>
+                                        <td>1994</td>
+                                        <td>JL. PENGASINAN, GG. MASJID NURUL HUDA</td>
+                                        <td>Sawangan</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>SHM</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Masji ussalam</td>
+                                        <td>1988</td>
+                                        <td>Jl. Halmahera, Kec. Beji, Depok Utara</td>
+                                        <td>Beji</td>
+                                        <td>MASJID JAMI</td>
+                                        <td>Wakaf</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>Masji Ukhuwah Islamiyah</td>
+                                        <td>1987</td>
+                                        <td>Kampus Baru Univ. Indonesia, Pondok Cina, Kota Depok, Jawa Barat</td>
+                                        <td>Beji</td>
+                                        <td>MASJID DI TEMPAT PUBLIK</td>
+                                        <td>SHM</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>Mushalla AL-FATTAAH</td>
+                                        <td>2013</td>
+                                        <td>GG. GANDARIA I RT 005/05 RATUJAYA</td>
+                                        <td>Cipayung</td>
+                                        <td>MASJID RAYA</td>
+                                        <td>Wakaf</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>Mushalla AL-IKHLAS</td>
+                                        <td>1982</td>
+                                        <td>MAMPANG RT 02/02 KELURAHAN MAMPANG</td>
+                                        <td>Pancoran Mas</td>
+                                        <td>MUSHALLA DI TEMPAT PUBLIK</td>
+                                        <td>Wakaf</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama Masjid</th>
+                                        <th>Tahun Berdiri</th>
+                                        <th>Alamat</th>
+                                        <th>Kecamatan</th>
+                                        <th>Jenis</th>
+                                        <th>Status Tanah</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2023
+                <a href="#">AdminLTE</a>.</strong>
+            All rights reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge("uibutton", $.ui.button);
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="../plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../plugins/moment/moment.min.js"></script>
+    <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="../plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.js"></script>
+
+    <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+</body>
+
+</html>

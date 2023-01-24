@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Direktory Masjid Depok | Berita</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.css" />
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css" />
+    <!-- summernote -->
+    <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css" />
+
+    <link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="dashboard.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="navbar-search-block">
+                        <form class="form-inline">
+                            <div class="input-group input-group-sm" style="width: 150px">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                                    aria-label="Search" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="dashboard.html" class="brand-link">
+                <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                    style="opacity: 0.8" />
+                <span class="brand-text font-weight-light">Direktory Masjid Depok</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="../dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image" />
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">ahmad admin</a>
+                    </div>
+                </div>
+
+                <!-- SidebarSearch Form -->
+                <div class="form-inline">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                            aria-label="Search" />
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+                                <i class="fas fa-search fa-fw"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item menu-open">
+                            <a href="dashboard.html" class="nav-link ">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="masjid.html" class="nav-link">
+                                <i class="nav-icon fas fa-cart-arrow-down"></i>
+                                <p>
+                                    Masjid
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="berita.html" class="nav-link active">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Berita
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="nav-icon far fa-arrow-alt-circle-right"></i>
+                                <p>Logout</p>
+                            </a>
+                        </li>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                        </div>
+
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Data Berita</li>
+                            </ol>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <!-- Small boxes (Stat box) -->
+                    <div class="row">
+                        <div class="col-lg-12 card">
+                            <div class="card-header mb-3">
+                                <h3 class="card-title">Data Berita</h3>
+                            </div>
+                            <button type="button" class="btn btn-primary mb-3" data-toggle="modal"
+                                data-target="#tambah">
+                                Tambah Berita
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="tambah"
+                                aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="tambah">Tambah Berita</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="masjid">Nama Masjid</label>
+                                                    <input type="text" class="form-control" id="masjid"
+                                                        placeholder="Nama masjid" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="judul">Judul Berita</label>
+                                                    <input type="text" class="form-control" id="judul"
+                                                        placeholder="judul Berita" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="tanggal">Tanggal Post</label>
+                                                    <input type="date" class="form-control" id="tanggal"
+                                                        placeholder="tanggal Berdiri" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="berita">Isi Berita</label>
+                                                    <textarea id="berita" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="tag">Tag Berita</label>
+                                                    <input type="text" class="form-control" id="tag"
+                                                        placeholder="tag" />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="penulis">Penulis</label>
+                                                    <input type="text" class="form-control" id="Penulis"
+                                                        placeholder="penulis" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="tanggal">Tanggal Terbit</label>
+                                                    <input type="date" class="form-control" id="tanggal"
+                                                        placeholder="tanggal" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Status">Status Berita</label>
+                                                    <input type="radio" name="berita" id="berita" value="draft"> Draft
+                                                    <input type="radio" name="berita" id="berita" value="Submit"> Submit
+                                                    <input type="radio" name="berita" id="berita" value="Review"> Review
+                                                    <input type="radio" name="berita" id="berita" value="Reject"> Reject
+                                                    <input type="radio" name="berita" id="berita" value="Approve">
+                                                    Approve
+                                                </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-success">Update</button>
+                                            <button type="button" class="btn btn-primary">Simpan</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Tanggal</th>
+                                        <th>Judul Berita</th>
+                                        <th>Tagar</th>
+                                        <th>Penulis</th>
+                                        <th>Status</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22 Januari 2020</td>
+                                        <td>Inaugurasi Masjid Baru di Kota Depok</td>
+                                        <td>#masjidbaru #kotadepok</td>
+                                        <td>Anisa</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>23 Januari 2020</td>
+                                        <td>Pembangunan Musholla di Kampus ITB</td>
+                                        <td>#musholla #ITB</td>
+                                        <td>Budi</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>24 Januari 2020</td>
+                                        <td>Renovasi Masjid Agung Jawa Tengah</td>
+                                        <td>#renovasimasjid #jateng</td>
+                                        <td>Cindy</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>25 Januari 2020</td>
+                                        <td>Dukung Kelulusan Siswa dengan Shalat Berjamaah di Masjid</td>
+                                        <td>#shalatberjamaah #kelulusan</td>
+                                        <td>Dani</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>26 Januari 2020</td>
+                                        <td>Peluncuran Aplikasi Takmir Masjid</td>
+                                        <td>#takmirmasjid #aplikasi</td>
+                                        <td>Eka</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>27 Januari 2020</td>
+                                        <td>Seminar Nasional Tentang Pendidikan Karakter di Masjid</td>
+                                        <td>#seminarnasional #karakter #pendidikan</td>
+                                        <td>Fahmi</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>28 Januari 2020</td>
+                                        <td>Program Kajian Islam di Masjid Al-Hikmah</td>
+                                        <td>#kajianislam #alhikmah</td>
+                                        <td>Gina</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>29 Januari 2020</td>
+                                        <td>Donasi Alat Sholat Anak di Masjid Darul Falah</td>
+                                        <td>#donasi #alatsholat #darulfalah</td>
+                                        <td>Hendra</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>30 Januari 2020</td>
+                                        <td>Pelatihan Tarbiyah di Masjid Jami' Al-Furqon</td>
+                                        <td>#tarbiyah #al-furqon</td>
+                                        <td>Ika</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>31 Januari 2020</td>
+                                        <td>Pendirian Pondok Pesantren Baru di Desa Tambakberas</td>
+                                        <td>#pondokpesantren #tambakberas</td>
+                                        <td>Joko</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>1 Februari 2020</td>
+                                        <td>Pengajian Rutin di Masjid Al-Ikhlas</td>
+                                        <td>#pengajian #al-ikhlas</td>
+                                        <td>Kurnia</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>2 Februari 2020</td>
+                                        <td>Seminar Tentang Manajemen Masjid</td>
+                                        <td>#seminar #manajemenmasjid</td>
+                                        <td>Lina</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>3 Februari 2020</td>
+                                        <td>Pelatihan Membuat Website Masjid</td>
+                                        <td>#pelatihan #websitemasjid</td>
+                                        <td>Mila</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>14</td>
+                                        <td>4 Februari 2020</td>
+                                        <td>Acara Silaturahmi di Masjid Jami' Al-Furqon</td>
+                                        <td>#silaturahmi #al-furqon</td>
+                                        <td>Nisa</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>5 Februari 2020</td>
+                                        <td>Donasi Buku Islam di Masjid Al-Hikmah</td>
+                                        <td>#donasi #bukuislam #alhikmah</td>
+                                        <td>Oki</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>6 Februari 2020</td>
+                                        <td>Pelatihan Menjadi Imam Masjid</td>
+                                        <td>#pelatihan #imammasjid</td>
+                                        <td>Pika</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>7 Februari 2020</td>
+                                        <td>Pengajian Ramadhan di Masjid Darul Falah</td>
+                                        <td>#pengajian #ramadhan #darulfalah</td>
+                                        <td>Qadar</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>8 Februari 2020</td>
+                                        <td>Seminar Tentang Keluarga Sakinah di Masjid Al-Ikhlas</td>
+                                        <td>#seminar #keluargasakinah #al-ikhlas</td>
+                                        <td>Rina</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>9 Februari 2020</td>
+                                        <td>Pelatihan Menjadi Khatib Masjid</td>
+                                        <td>#pelatihan #khatibmasjid</td>
+                                        <td>Sari</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>10 Februari 2020</td>
+                                        <td>Acara Buka Puasa Bersama di Masjid Jami' Al-Furqon</td>
+                                        <td>#bukapuasabersama #al-furqon</td>
+                                        <td>Tuti</td>
+                                        <td>Approve</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm"><i
+                                                    class="fas fa-search"></i>Detail</a>
+
+                                            <a href="#" class="btn btn-success btn-sm"><i
+                                                    class="fas fa-edit"></i>Edit</a>
+                                            <a href="#" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>Hapus</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Tanggal</th>
+                                        <th>Judul Berita</th>
+                                        <th>Tagar</th>
+                                        <th>Penulis</th>
+                                        <th>Status</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2023
+                <a href="#">AdminLTE</a>.</strong>
+            All rights reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge("uibutton", $.ui.button);
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="../plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../plugins/moment/moment.min.js"></script>
+    <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="../plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.js"></script>
+
+    <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+</body>
+
+</html>
